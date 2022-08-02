@@ -53,7 +53,13 @@ export const ButtonLink = styled.a`
   -ms-user-select: none; /* IE10+ */
   user-select: none; /* Possível implementação no futuro */
   /* cursor: default; */
+  :link {
+    color: #fff !important;
+  }
   :hover {
+    color: #0f0 !important;
+
+  :active {
     color: #0f0 !important;
   }
   cursor: pointer;

@@ -57,7 +57,7 @@ export const MainValues = styled.section`
   width: 100%;
   height: 1080px;
   display: flex;
-  background-color: #ff0;
+  background-color: #31308d;
 `
 
 export const MainContact = styled.section`

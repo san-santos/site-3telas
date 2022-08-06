@@ -37,26 +37,26 @@ const ListVilaOlimpia = () => {
     <ListValues>
       <ListColumn>
         <Title>{selectStudio.slice(0, 1)}</Title>
-        {studio1.map((item) => (
-          <ListText key={item}>{item}</ListText>
+        {studio1.map((item, i) => (
+          <ListText key={i}>{item}</ListText>
         ))}
       </ListColumn>
       <ListColumn>
         <Title>{selectStudio.slice(1, 2)}</Title>
-        {studio4.map((item) => (
-          <ListText key={item}>{item}</ListText>
+        {studio4.map((item, i) => (
+          <ListText key={i}>{item}</ListText>
         ))}
       </ListColumn>
       <ListColumn>
         <Title>{selectStudio.slice(2, 3)}</Title>
-        {studioA.map((item) => (
-          <ListText key={item}>{item}</ListText>
+        {studioA.map((item, i) => (
+          <ListText key={i}>{item}</ListText>
         ))}
       </ListColumn>
       <ListColumn>
         <Title>{selectStudio.slice(3, 4)}</Title>
-        {studioB.map((item) => (
-          <ListText key={item}>{item}</ListText>
+        {studioB.map((item, i) => (
+          <ListText key={i}>{item}</ListText>
         ))}
       </ListColumn>
     </ListValues>

@@ -1,4 +1,4 @@
-import Menu from './Navbar'
+import Menu from './navbar'
 import { MainHeader } from './styled'
 
 const Header = () => (

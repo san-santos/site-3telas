@@ -1,4 +1,4 @@
-import Footer from 'components/footer'
+import Footer from 'components/tfooter'
 import Header from 'components/header'
 import Main from 'components/main'
 

@@ -1,5 +1,5 @@
 import { MainMenu, LogoHeader, MainLinksMenu, ButtonLink } from '../styled'
-import SocialMedia from '../Social'
+import SocialMedia from '../social'
 import Link from 'next/link'
 
 const NavBar = () => {

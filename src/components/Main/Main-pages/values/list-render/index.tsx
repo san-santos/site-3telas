@@ -1,6 +1,7 @@
 import ListVilaOlimpia from './list-olimpia'
 import ListExtrasOlimpia from './list-extras-olimpia'
 import { Lists, Container, TitlePage, TextInfo } from './styled'
+
 const ListValues = () => {
   return (
     <Container>

@@ -57,6 +57,7 @@ export const MainValues = styled.section`
   width: 100%;
   height: 1080px;
   display: flex;
+  justify-content: center;
   background-color: #31308d;
 `
 

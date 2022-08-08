@@ -29,33 +29,36 @@ export const MainHome = styled.section`
   width: 100%;
   height: 95px;
   display: flex;
-  background-color: #00f2ff;
+  /* background-color: #00f2ff; */
 `
 
 export const MainHistory = styled.section`
   width: 100%;
-  height: 1080px;
+  height: auto;
   display: flex;
-  background-color: #f00;
+  justify-content: center;
+  /* background-color: #f00; */
 `
 
 export const MainServices = styled.section`
   width: 100%;
   height: 1080px;
   display: flex;
-  background-color: #00f;
+  justify-content: center;
+  /* background-color: #00f; */
 `
 
 export const MainStudios = styled.section`
   width: 100%;
   height: 1080px;
   display: flex;
-  background-color: #0f0;
+  justify-content: center;
+  /* background-color: #0f0; */
 `
 
 export const MainValues = styled.section`
   width: 100%;
-  height: 1080px;
+  height: auto;
   display: flex;
   justify-content: center;
   background-color: #31308d;

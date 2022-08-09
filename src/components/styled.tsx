@@ -36,15 +36,18 @@ export const MainHistory = styled.section`
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
-  /* background-color: #f00; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `
 
 export const MainServices = styled.section`
   width: 100%;
   height: 1080px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-color: #31308d;
 `
 
@@ -52,7 +55,9 @@ export const MainStudios = styled.section`
   width: 100%;
   height: 1080px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   /* background-color: #0f0; */
 `
 
@@ -60,7 +65,9 @@ export const MainValues = styled.section`
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-color: #31308d;
 `
 

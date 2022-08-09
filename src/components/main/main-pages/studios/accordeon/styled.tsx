@@ -26,3 +26,8 @@ export const TextInfo = styled.h2`
   line-height: 32px;
   letter-spacing: 1.6px;
 `
+export const FooterSpace = styled.div`
+  background-color: #31308d;
+  width: 100%;
+  height: 90px;
+`

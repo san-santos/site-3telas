@@ -41,3 +41,8 @@ export const ModalHistory = styled.div`
   padding-left: 5%;
   padding-right: 5%;
 `
+export const FooterSpace = styled.div`
+  background-color: #31308d;
+  width: 100%;
+  height: 90px;
+`

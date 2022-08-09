@@ -79,3 +79,8 @@ export const Title = styled.div`
   font-weight: 600;
   padding-left: 25px;
 `
+export const FooterSpace = styled.div`
+  background-color: #fff;
+  width: 100%;
+  height: 150px;
+`

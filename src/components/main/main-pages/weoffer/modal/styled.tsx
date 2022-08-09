@@ -11,7 +11,7 @@ export const Container = styled.div`
 `
 export const TitlePage = styled.h1`
   width: 100%;
-  color: #000;
+  color: #fff;
   font-size: 22px;
   margin-top: 100px;
   margin-bottom: 50px;
@@ -20,7 +20,7 @@ export const TitlePage = styled.h1`
   letter-spacing: 1.6px;
 `
 export const TextInfo = styled.h2`
-  color: #000;
+  color: #fff;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;

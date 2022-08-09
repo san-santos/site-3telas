@@ -45,7 +45,7 @@ export const MainServices = styled.section`
   height: 1080px;
   display: flex;
   justify-content: center;
-  /* background-color: #00f; */
+  background-color: #31308d;
 `
 
 export const MainStudios = styled.section`

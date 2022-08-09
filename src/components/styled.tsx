@@ -66,7 +66,8 @@ export const MainValues = styled.section`
 
 export const MainContact = styled.section`
   width: 100%;
-  height: 1080px;
+  height: auto;
   display: flex;
-  background-color: #f0f;
+  justify-content: center;
+  /* background-color: #f0f; */
 `

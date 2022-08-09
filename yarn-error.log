@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add @fortawesome/pro-solid-svg-icons
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add react-iconsyarn add react-icons
 
 PATH: 
-  C:\Program Files\WindowsApps\Microsoft.PowerShell_7.2.2.0_x64__8wekyb3d8bbwe;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\sandr\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\sandr\AppData\Local\Microsoft\WindowsApps;C:\Users\sandr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sandr\AppData\Local\atom\bin;C:\Users\sandr\AppData\Local\Microsoft\WindowsApps;C:\Users\sandr\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\sandr\AppData\Roaming\npm
+  C:\Program Files\WindowsApps\Microsoft.PowerShell_7.2.5.0_x64__8wekyb3d8bbwe;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\sandr\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\dotnet\;C:\Users\sandr\AppData\Local\Microsoft\WindowsApps;C:\Users\sandr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sandr\AppData\Local\atom\bin;C:\Users\sandr\AppData\Local\Microsoft\WindowsApps;C:\Users\sandr\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\sandr\AppData\Roaming\npm;C:\Users\sandr\AppData\Local\Programs\Hyper\resources\bin;C:\Users\sandr\.dotnet\tools
 
 Yarn version: 
   1.22.18
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@fortawesome%2fpro-solid-svg-icons: Not found
+  Error: https://registry.yarnpkg.com/react-iconsyarn: Not found
       at Request.params.callback [as _callback] (C:\Users\sandr\AppData\Roaming\nvm\v16.14.2\node_modules\yarn\lib\cli.js:66138:18)
       at Request.self.callback (C:\Users\sandr\AppData\Roaming\nvm\v16.14.2\node_modules\yarn\lib\cli.js:140883:22)
       at Request.emit (node:events:526:28)
@@ -42,20 +42,22 @@ npm manifest:
     "lint-staged": {
       "src/**/*": [
         "yarn lint --fix",
-        "yarn test --findRelatedTest --bail"
+        "yarn test --findRelatedTests --bail"
       ]
     },
     "dependencies": {
       "@fortawesome/fontawesome-free": "^6.1.1",
-      "@fortawesome/fontawesome-svg-core": "^6.1.1",
+      "@fortawesome/fontawesome-svg-core": "^6.1.2",
       "@fortawesome/free-regular-svg-icons": "^6.1.1",
-      "@fortawesome/free-solid-svg-icons": "^6.1.1",
-      "@fortawesome/react-fontawesome": "^0.1.18",
+      "@fortawesome/free-solid-svg-icons": "^6.1.2",
+      "@fortawesome/react-fontawesome": "^0.2.0",
       "font-awesome": "^4.7.0",
+      "i": "^0.3.7",
       "next": "10",
       "next-pwa": "^5.4.0",
       "react": "17.0.2",
       "react-dom": "17.0.2",
+      "react-scroll": "^1.8.7",
       "styled-components": "^5.3.5",
       "webpack": "4"
     },
@@ -75,7 +77,7 @@ npm manifest:
       "eslint-config-prettier": "^8.3.0",
       "eslint-plugin-prettier": "^4.0.0",
       "eslint-plugin-react": "^7.27.0",
-      "eslint-plugin-react-hooks": "^4.3.0",
+      "eslint-plugin-react-hooks": "^4.6.0",
       "husk": "^0.5.3",
       "husky": "^7.0.4",
       "install": "^0.13.0",
@@ -1095,17 +1097,22 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.1.1.tgz#7dc996042d21fc1ae850e3173b5c67b0549f9105"
     integrity sha512-wVn5WJPirFTnzN6tR95abCx+ocH+3IFLXAgyavnf9hUmN0CfWoDjPT/BAWsUVwSlYYVBeCLJxaqi7ZGe4uSjBA==
   
+  "@fortawesome/fontawesome-common-types@6.1.2":
+    version "6.1.2"
+    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.1.2.tgz#c1095b1bbabf19f37f9ff0719db38d92a410bcfe"
+    integrity sha512-wBaAPGz1Awxg05e0PBRkDRuTsy4B3dpBm+zreTTyd9TH4uUM27cAL4xWyWR0rLJCrRwzVsQ4hF3FvM6rqydKPA==
+  
   "@fortawesome/fontawesome-free@^6.1.1":
     version "6.1.1"
     resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.1.1.tgz#bf5d45611ab74890be386712a0e5d998c65ee2a1"
     integrity sha512-J/3yg2AIXc9wznaVqpHVX3Wa5jwKovVF0AMYSnbmcXTiL3PpRPfF58pzWucCwEiCJBp+hCNRLWClTomD8SseKg==
   
-  "@fortawesome/fontawesome-svg-core@^6.1.1":
-    version "6.1.1"
-    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.1.1.tgz#3424ec6182515951816be9b11665d67efdce5b5f"
-    integrity sha512-NCg0w2YIp81f4V6cMGD9iomfsIj7GWrqmsa0ZsPh59G7PKiGN1KymZNxmF00ssuAlo/VZmpK6xazsGOwzKYUMg==
+  "@fortawesome/fontawesome-svg-core@^6.1.2":
+    version "6.1.2"
+    resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.1.2.tgz#11e2e8583a7dea75d734e4d0e53d91c63fae7511"
+    integrity sha512-853G/Htp0BOdXnPoeCPTjFrVwyrJHpe8MhjB/DYE9XjwhnNDfuBCd3aKc2YUYbEfHEcBws4UAA0kA9dymZKGjA==
     dependencies:
-      "@fortawesome/fontawesome-common-types" "6.1.1"
+      "@fortawesome/fontawesome-common-types" "6.1.2"
   
   "@fortawesome/free-regular-svg-icons@^6.1.1":
     version "6.1.1"
@@ -1114,17 +1121,17 @@ Lockfile:
     dependencies:
       "@fortawesome/fontawesome-common-types" "6.1.1"
   
-  "@fortawesome/free-solid-svg-icons@^6.1.1":
-    version "6.1.1"
-    resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.1.1.tgz#3369e673f8fe8be2fba30b1ec274d47490a830a6"
-    integrity sha512-0/5exxavOhI/D4Ovm2r3vxNojGZioPwmFrKg0ZUH69Q68uFhFPs6+dhAToh6VEQBntxPRYPuT5Cg1tpNa9JUPg==
+  "@fortawesome/free-solid-svg-icons@^6.1.2":
+    version "6.1.2"
+    resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.1.2.tgz#491d668b8a6603698d0ce1ac620f66fd22b74c84"
+    integrity sha512-lTgZz+cMpzjkHmCwOG3E1ilUZrnINYdqMmrkv30EC3XbRsGlbIOL8H9LaNp5SV4g0pNJDfQ4EdTWWaMvdwyLiQ==
     dependencies:
-      "@fortawesome/fontawesome-common-types" "6.1.1"
+      "@fortawesome/fontawesome-common-types" "6.1.2"
   
-  "@fortawesome/react-fontawesome@^0.1.18":
-    version "0.1.18"
-    resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.18.tgz#dae37f718a24e14d7a99a5496c873d69af3fbd73"
-    integrity sha512-RwLIB4TZw0M9gvy5u+TusAA0afbwM4JQIimNH/j3ygd6aIvYPQLqXMhC9ErY26J23rDPyDZldIfPq/HpTTJ/tQ==
+  "@fortawesome/react-fontawesome@^0.2.0":
+    version "0.2.0"
+    resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.2.0.tgz#d90dd8a9211830b4e3c08e94b63a0ba7291ddcf4"
+    integrity sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw==
     dependencies:
       prop-types "^15.8.1"
   
@@ -3719,10 +3726,15 @@ Lockfile:
     dependencies:
       prettier-linter-helpers "^1.0.0"
   
-  eslint-plugin-react-hooks@^4.2.0, eslint-plugin-react-hooks@^4.3.0:
+  eslint-plugin-react-hooks@^4.2.0:
     version "4.3.0"
     resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.3.0.tgz#318dbf312e06fab1c835a4abef00121751ac1172"
     integrity sha512-XslZy0LnMn+84NEG9jSGR6eGqaZB3133L8xewQo3fQagbQuGt7a63gf+P1NGKZavEYEC3UXaWEAA/AqDkuN6xA==
+  
+  eslint-plugin-react-hooks@^4.6.0:
+    version "4.6.0"
+    resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz#4c3e697ad95b77e93f8646aaa1630c1ba607edd3"
+    integrity sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==
   
   eslint-plugin-react@^7.23.1, eslint-plugin-react@^7.27.0:
     version "7.27.0"
@@ -4580,6 +4592,11 @@ Lockfile:
     version "7.0.4"
     resolved "https://registry.yarnpkg.com/husky/-/husky-7.0.4.tgz#242048245dc49c8fb1bf0cc7cfb98dd722531535"
     integrity sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==
+  
+  i@^0.3.7:
+    version "0.3.7"
+    resolved "https://registry.yarnpkg.com/i/-/i-0.3.7.tgz#2a7437a923d59c14b17243dc63a549af24d85799"
+    integrity sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==
   
   iconv-lite@0.4.24:
     version "0.4.24"
@@ -5797,6 +5814,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
     integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
   
+  lodash.throttle@^4.1.1:
+    version "4.1.1"
+    resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+    integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
+  
   lodash.truncate@^4.4.2:
     version "4.4.2"
     resolved "https://registry.yarnpkg.com/lodash.truncate/-/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
@@ -6887,6 +6909,14 @@ Lockfile:
     version "0.8.3"
     resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
     integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
+  
+  react-scroll@^1.8.7:
+    version "1.8.7"
+    resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.8.7.tgz#8020035329efad00f03964e18aff6822137de3aa"
+    integrity sha512-fBOIwweAlhicx8RqP9tQXn/Uhd+DTtVRjw+0VBsIn1Z+MjRYLhTZ0tMoTAU1vOD3dce8mI6copexI4yWII+Luw==
+    dependencies:
+      lodash.throttle "^4.1.1"
+      prop-types "^15.7.2"
   
   react@17.0.2:
     version "17.0.2"

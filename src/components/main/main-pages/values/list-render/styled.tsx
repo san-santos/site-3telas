@@ -13,7 +13,7 @@ export const TitlePage = styled.h1`
   color: #fff;
   font-size: 22px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-weight: 600;
   text-align: left;
   letter-spacing: 1.6px;

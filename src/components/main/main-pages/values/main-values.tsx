@@ -1,7 +1,7 @@
 import { MainValues } from '../../../styled'
 import ListValues from './list-render'
 
-const Values = () => {
+const ValuesTables = () => {
   return (
     <>
       <MainValues id="values">
@@ -11,4 +11,4 @@ const Values = () => {
   )
 }
 
-export default Values
+export default ValuesTables

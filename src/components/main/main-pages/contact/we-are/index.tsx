@@ -7,7 +7,7 @@ import {
   IconInfo,
   Map
 } from './styled'
-import Form from '../form'
+import FormValidation from '../form'
 import { FaWhatsapp, FaRegEnvelope, FaSearchLocation } from 'react-icons/fa'
 
 const ContactContent = () => {
@@ -40,7 +40,7 @@ const ContactContent = () => {
             loading="lazy"
           ></Map>
         </InfoContente>
-        <Form />
+        <FormValidation />
       </ContentContact>
     </Container>
   )

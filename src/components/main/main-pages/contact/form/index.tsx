@@ -1,15 +1,7 @@
-import { Formik, ErrorMessage, Field, Form } from 'formik'
+import { Formik, Form } from 'formik'
 import schema from './schema'
-import {
-  Container,
-  FormStyled,
-  FieldStyled,
-  SelectStyled,
-  TitlePage,
-  TextLabel,
-  TextArea,
-  Button
-} from './styled'
+import { Field, Select, TextArea } from './field'
+import { Container, FormStyled, TitlePage, Button } from './styled'
 
 const FormValidation = () => {
   return (
@@ -25,50 +17,51 @@ const FormValidation = () => {
           mensage: ''
         }}
         validationSchema={schema}
-        onSubmit={(values) => {
+        onSubmit={(values, actions) => {
           console.log('ONSUBMIT', values)
+          setTimeout(() => {
+            alert(JSON.stringify(values, null, 2))
+            actions.setSubmitting(false)
+          }, 1000)
         }}
       >
         {({ isValid }) => (
           <Form>
             <FormStyled>
-              <TextLabel htmlFor="name">Nome</TextLabel>
-              <Field component={FieldStyled} id="name" name="name" />
-              <ErrorMessage name="name" />
-
-              <TextLabel htmlFor="email">Email</TextLabel>
               <Field
-                component={FieldStyled}
-                id="email"
+                name="name"
+                label="Nome"
+                type="text"
+                InputComponent={undefined}
+              />
+
+              <Field
                 name="email"
                 type="email"
+                label="Email"
+                InputComponent={undefined}
               />
-              <ErrorMessage name="email" />
 
-              <TextLabel htmlFor="whatsapp">Whatsapp</TextLabel>
               <Field
-                component={FieldStyled}
-                id="whatsapp"
                 name="whatsapp"
                 type="number"
+                label="Whatsapp"
+                InputComponent={undefined}
               />
-              <ErrorMessage name="whatsapp" />
 
-              <TextLabel htmlFor="choice">Selecione</TextLabel>
-              <Field
-                component={SelectStyled}
-                id="choice"
+              <Select
                 name="choice"
                 as="select"
-              >
-                <option value="orcamento">Solicitar orçamento</option>
-                <option value="negociacos">Negociações</option>
-                <option value="informacoes">Outras informações</option>
-              </Field>
+                label="Selecione"
+                options={undefined}
+                SelectComponent={undefined}
+              />
 
-              <TextLabel htmlFor="mensage">Mensagem</TextLabel>
-              <TextArea id="mensage" name="mensage"></TextArea>
-              <ErrorMessage name="mensagel" />
+              <TextArea
+                name="mensage"
+                label={'Mensagem'}
+                TextAreaComponent={undefined}
+              ></TextArea>
 
               <Button type="submit" disabled={!isValid}>
                 Enviar

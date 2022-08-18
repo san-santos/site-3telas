@@ -33,20 +33,23 @@ export const FieldStyled = styled.input`
   padding-left: 5px;
   margin-top: 2px;
   margin-bottom: 5px;
+  border-radius: 5px;
 `
 export const SelectStyled = styled.select`
   height: 30px;
   padding-left: 5px;
   margin-top: 2px;
   margin-bottom: 5px;
+  border-radius: 5px;
 `
-export const TextArea = styled.textarea`
+export const StyledTextArea = styled.textarea`
   height: 85px;
+  padding: 5px;
+  border-radius: 5px;
 `
 export const Button = styled.button`
   height: 30px;
-  border-radius: 2px;
-  margin-top: 3px;
+  border-radius: 5px;
   margin-top: 25px;
   font-weight: 400;
   font-size: 14px;

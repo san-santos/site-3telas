@@ -1,7 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useField } from 'formik'
 import { Key } from 'react'
-import { TextLabel, FieldStyled, SelectStyled, StyledTextArea } from './styled'
+import {
+  TextLabel,
+  FieldStyled,
+  SelectStyled,
+  StyledTextArea,
+  ErrorStyled
+} from './styled'
 
 type InputProps = {
   component: any
@@ -51,7 +57,9 @@ export const Field = ({
     <>
       {label && <TextLabel htmlFor={id}>{label}</TextLabel>}
       <InputComponent id={id} {...inputProps} {...props} />
-      {meta.error && meta.touched && <div>{meta.error.toString()}</div>}
+      {meta.error && meta.touched && (
+        <ErrorStyled>{meta.error.toString()}</ErrorStyled>
+      )}
     </>
   )
 }
@@ -59,7 +67,7 @@ export const Field = ({
 export const Select = ({
   label,
   component: SelectComponent,
-  options = ['', 'Solicitar orçamento', 'Negociações', 'Outras informações'],
+  options = ['Solicitar orçamento', 'Negociações', 'Outras informações'],
   ...props
 }: SelectProps) => {
   const [selectProps] = useField(props.toString)
@@ -67,10 +75,13 @@ export const Select = ({
   return (
     <>
       {label && <TextLabel htmlFor={id}>{label}</TextLabel>}
-      <SelectComponent id={id} {...selectProps} {...props}>
+      <SelectComponent id={id} {...selectProps} {...props} defaultValue="">
+        <option disabled selected value="">
+          Escolha o assunto
+        </option>
         {options.map((option: any) => {
           return (
-            <option key={option.value} value={option.value}>
+            <option key={option.toString()} value={option.value}>
               {option}
             </option>
           )

@@ -43,5 +43,5 @@ export const TextInfo = styled.h2`
 export const Map = styled.iframe`
   background-color: #fff;
   border: 0px;
-  margin-top: 100px;
+  margin-top: 50px;
 `
